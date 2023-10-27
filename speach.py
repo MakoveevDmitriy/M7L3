@@ -11,11 +11,5 @@ def speach():
         
         audio = recog.listen(audio_file)
         return recog.recognize_google(audio, language="en-EN")
-    while True:
-        value = speach()
-        if value:
-            break
-        else:
-            value = speach()
 
 print(speach())
